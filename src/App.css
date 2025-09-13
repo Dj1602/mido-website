@@ -1,0 +1,276 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0073b1;
+  padding: 15px 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.body-content {
+  margin-top: 80px; /* To prevent overlap */
+}
+
+nav {
+  width: 100%;
+  max-width: 100%;
+  background-color: #0077b6; /* HVAC Blue */
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffdd57; /* Yellow hover effect */
+}
+
+/* Home Container */
+.home-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Image Slider Styles */
+.image-slider .swiper {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.image-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto !important;
+}
+
+.image-slider .swiper-slide img {
+  width: 100%;
+  height: auto !important;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-slider .swiper-pagination-bullet-active {
+  background: #0077b6 !important;
+}
+
+.image-slider .swiper-button-next,
+.image-slider .swiper-button-prev {
+  color: #0077b6 !important;
+}
+
+/* Testimonial Section Styles */
+.testimonial-section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-section h2 {
+  color: #0077b6;
+}
+
+.testimonial-slider .swiper {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.testimonial-slider .swiper-slide {
+  white-space: normal;
+  word-wrap: break-word;
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.testimonial-slider .swiper-slide p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.testimonial-slider .swiper-slide h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.testimonial-slider .swiper-slide p:last-child {
+  font-size: 1rem;
+  color: gray;
+}
+
+.testimonial-slider .swiper-pagination-bullet-active {
+  background: #0077b6 !important;
+}
+
+/* Footer */
+.footer {
+  background-color: #0077b6;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffdd57;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ffdd57;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffdd57;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.contact-container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background-color: #005f8a;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav div {
+    margin-top: 10px;
+  }
+}
